@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #nav{
+             background-color: yellow; 
+             height: 70px;
+             font-size: 50px;
+             width: 1300px;
+           
+          }
+         
+
+          #card{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(3 500px);
+              display: flex;
+          }
+          #card>div:nth-child(1){
+              margin-top: 50px;
+              background-color: red;
+              width: 900px;
+              height: 500px;
+              font-size: 30px;
+              color: gray;
+
+          }
+          #card>div:nth-child(2){
+              margin-top: 50px;
+          
+              margin-left: 80px;
+              
+          }
+          #card>div:nth-child(2)>div:nth-child(1){
+              margin-bottom: 20px;
+              background-color: green;
+              width: 320px;
+              height: 150px;
+              font-size: 30px;
+              color: gray;
+          }
+          #card>div:nth-child(2)>div:nth-child(2){
+              margin-top: 20px;
+              background-color: green;
+              width: 320px;
+              height: 150px;
+              font-size: 30px;
+              color: gray;
+          }
+          #card>div:nth-child(2)>div:nth-child(3){
+              margin-top: 20px;
+              background-color: green;
+              width: 320px;
+              height: 150px;
+              font-size: 30px;
+              color: gray;
+          }
+
+          @media all and (min-width:450px) and (max-width:720px){
+            #card>div:nth-child(1){
+              margin-top: 50px;
+              width: 1300px;
+              height: 300px;
+            }
+            #card{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(3 500px);
+              display: contents;
+          }
+          #card>div:nth-child(2)>div:nth-child(1){
+              margin-bottom: 20px;
+              background-color: green;
+              width: 320px;
+              height: 150px;
+              font-size: 30px;
+              color: gray;
+          }
+          #card>div:nth-child(2)>div:nth-child(2){
+              background-color: green;
+              width: 320px;
+              height: 150px;
+              font-size: 30px;
+              color: gray;
+          }
+          #card>div:nth-child(2)>div:nth-child(3){
+              background-color: green;
+              width: 320px;
+              height: 150px;
+              font-size: 30px;
+              color: gray;
+          }
+          }
+
+    </style>
+</head>
+<body>
+    <div id="nav"> Navigation</div>
+    <div id="card">
+
+        <div>LEFT BOX</div>
+        <div>
+            <div>RIGHT BOX 1</div>
+            <div>RIGHT BOX 2</div>
+            <div>RIGHT BOX 3</div>
+        </div>
+    </div>
+    
+</body>
+</html>

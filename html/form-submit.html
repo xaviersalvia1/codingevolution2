@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM SUBMIT BASIC DOM</h1>
+    <form>
+        <h4>Name</h4>
+        <input id="nm" type="text" placeholder="Enter Your Name">
+        <hr>
+        <h4>Age</h4>
+        <input id="age" type="number"placeholder="Enter Your Age">
+        <hr>
+        <h4>Gender</h4>
+        <select id="gnd" name="Gender" id="gend">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+        <hr>
+        <h4>Email</h4>
+        <input id="eml" type="Email" placeholder="Type Your Email">
+        <hr>
+        <h4>Mobile Number</h4>
+        <input id="mbl" type="number" placeholder="Type your valid No.">
+        <input type="submit" placeholder="Submit">
+    </form>
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", myFunction)
+    function myFunction(event){
+        event.preventDefault()
+        let nm=document.querySelector("#nm").value
+        let ag=document.querySelector("#age").value
+        let gnder=document.querySelector("#gnd").value
+        let emal=document.querySelector("#eml").value
+        let mn=document.querySelector("#mbl").value
+
+        console.log(nm,ag,gnder,emal,mn);
+
+    }
+</script>

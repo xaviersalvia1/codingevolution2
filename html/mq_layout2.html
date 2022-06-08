@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #nav{
+           background-color: yellow;
+           width: 100%;
+           height: 80px;
+           font-size: 50px;
+       }
+       #card{
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           grid-template-rows: 600px;
+           gap: 70px;
+           margin-top: 30px;
+       }
+       #card>div:nth-child(1){
+           background-color: red;
+           font-size: 30px;
+           color: gray;
+       }
+       #card>div:last-child{
+           background-color: green;
+           font-size: 30px;
+           color: gray;
+       }
+
+       @media all and (min-width:450px) and (max-width:720px){
+        #nav{
+           background-color: yellow;
+           width: 100%;
+           height: 80px;
+           font-size: 50px;
+       }  
+       #card{
+           display: grid;
+           grid-template-columns: repeat(1,1fr);
+           grid-template-rows: repeat(2,150px);
+           gap: 30px;
+           margin-top: 20px;
+       }
+       }
+    </style>
+</head>
+<body>
+    <div id="nav">Navigation</div>
+   <div id="card">
+    <div>LEFT BOX</div>
+    <div>RIGHT BOX</div>
+   </div>
+</body>
+</html>
